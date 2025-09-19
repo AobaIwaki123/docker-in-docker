@@ -1,7 +1,6 @@
 FROM ubuntu:22.04
 
 ## Set up Docker's apt repository.
-
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates curl
 RUN install -m 0755 -d /etc/apt/keyrings
 RUN curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
